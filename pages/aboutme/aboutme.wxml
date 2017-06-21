@@ -1,0 +1,27 @@
+<!--aboutme.wxml-->
+<view class="about">
+  <view class="about-wei">
+    <view class="about-img">
+      <image src="{{imgUrl}}" class="in-img" background-size="cover" model="aspectFit"></image>
+    </view>
+    <!--<view class="about-title">{{title}}</view>--> 
+  </view>
+  <view class="about-content">{{intro}}</view>
+
+
+  <!--<view class="about-tab">{{contab}}</view>-->
+  <view class="navigator" bindtap="openLocation">
+    <view class="navigator-text" >地址: {{address}}</view>
+    <view class="navigator-arrow"></view>
+  </view>
+  <view class="navigator" bindtap="makePhoneCall">
+    <view class="navigator-text">联系电话：{{mobile}}</view>
+    <view class="navigator-arrow"></view>
+  </view>
+  <view class="navigator">
+    <view class="navigator-text">传真：{{fax}}</view>
+  </view>
+  <!--<view>
+  <button open-type="contact">进入客服会话</button>
+  </view>-->
+</view>

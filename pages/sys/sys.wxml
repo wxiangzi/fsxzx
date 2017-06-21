@@ -1,0 +1,8 @@
+<view>
+  <view>
+    <button open-type="contact">进入客服会话</button>
+  </view>
+  <view>
+    <button bindtap="clearData">清除缓存</button>
+  </view>
+</view>

@@ -1,0 +1,43 @@
+<view class="container">
+  <movable-area style="width:{{ baseWidth }}px; height:{{ baseHeight }}px;text-align:center;">
+    <movable-view direction="all" out-of-bounds="true"
+        style="width:{{ scaleWidth }}px; height:{{ scaleHeight }}px; ">
+      <image catchtap="imageTapFn"
+          mode="aspectFit" 
+          src="{{album[0].src}}" 
+          data-src="{{album[0].src}}" 
+          class="moveimage" 
+          catchtouchmove="touchmoveFn"
+          style="margin-left:20rpx''"
+           />
+    </movable-view>
+  </movable-area>
+
+  <!--<swiper class="image-list-wrap" bindchange="swiperChange" autoplay="false" indicator-dots="true">
+    <block wx:for="{{album}}" wx:key="item.id">    
+   
+      <swiper-item style="display:flex;">
+       <movable-area style="height: 100%;width: 100%">
+        <movable-view direction="all" out-of-bounds="true">
+        <image bindlongtap="imageLongTap" 
+            mode="aspectFit" 
+            src="{{item.src}}" 
+            data-src="{{item.src}}" 
+            class="slide-image"
+            catchtouchmove="touchmoveFn"
+            style = "width:{{ scaleWidth }}px; height:{{ scaleHeight }}px"
+             />
+       </movable-view>
+        </movable-area>
+      </swiper-item>
+        
+    </block>
+  </swiper>-->
+
+  <!--图片数目-->
+  <!--<block wx:if="{{countShow}}">
+    <view class="albumCount" bindtap="hideCount">
+      {{currentIndex}}/{{album.length}}
+    </view>
+  </block>-->
+</view>

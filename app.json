@@ -1,0 +1,44 @@
+{
+  "comment":{
+    "text":"这里是注释",
+    "remark":"对微信小程序进行全局配置，决定页面文件的路径、窗口表现、设置网络超时时间、设置多 tab 等"
+  },
+  "pages":[
+    "pages/list/list",
+    "pages/logs/logs",
+    "pages/aboutme/aboutme",
+    "pages/album/album",
+    "pages/types/types",
+    "pages/service/service"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#1296db",
+    "navigationBarTitleText": "佛山兴正兴",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#dbdbdb",
+    "selectedColor": "#1296db",
+    "list": [
+      {
+        "pagePath": "pages/list/list",
+        "iconPath": "images/Viewlist.png",
+        "selectedIconPath": "images/Viewlist_selected.png",
+        "text": "产品展示"
+      },
+      {
+        "pagePath": "pages/aboutme/aboutme",
+        "iconPath": "images/aboutus.png",
+        "selectedIconPath": "images/aboutus_selected.png",
+        "text": "关于我们"
+      },
+      {
+        "pagePath": "pages/service/service",
+        "iconPath": "images/service.png",
+        "selectedIconPath": "images/service_selected.png",
+        "text": "客服"
+      }
+    ]
+  }
+}

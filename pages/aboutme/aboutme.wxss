@@ -1,0 +1,53 @@
+/**aboutme.wxss**/
+.about{ }
+.about-wei {text-align: center;}
+.about-img {display: block;width: 124px;height: 110px;margin: 20px 25%;}
+.about-title {display: inline-block;margin: 20px 0;}
+
+.about-content { text-indent: 2em;font-size: 16px; margin: 30px 24px; line-height: 1.5;}
+.about-addr {font-size: 16px; line-height: 2;text-indent: 2em;}
+.about-tab {margin-top: 20px;}
+.in-img {width: 200px;height: 130px;}
+
+.navigator {
+  padding: 20rpx 30rpx;
+  position: relative;
+  display: flex;
+  align-items: center;
+  font-size: 16px;
+}
+.navigator:before {
+  content: " ";
+  position: absolute;
+  left: 30rpx;
+  top: 0;
+  right: 30rpx;
+  height: 1px;
+  border-top: 1rpx solid #D8D8D8;
+  color: #D8D8D8;
+}
+.navigator:first-child:before {
+  display: none;
+}
+.navigator-text {
+  flex: 1;
+  width:90%;
+}
+.navigator-arrow {
+  padding-right: 26rpx;
+  position: relative;
+}
+.navigator-arrow:after {
+  content: " ";
+  display: inline-block;
+  height: 18rpx;
+  width: 18rpx;
+  border-width: 2rpx 2rpx 0 0;
+  border-color: #888888;
+  border-style: solid;
+  transform: matrix(0.71, 0.71, -0.71, 0.71, 0, 0);
+  position: absolute;
+  top: 50%;
+  margin-top: -8rpx;
+  right: 28rpx;
+}

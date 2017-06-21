@@ -1,0 +1,4 @@
+<view>
+  <button type="primary" open-type="contact" style="margin:20rpx;">在线客服</button>
+  <button type="primary" style="margin:20rpx;" bindtap="makePhoneCall">电话咨询</button>
+</view>

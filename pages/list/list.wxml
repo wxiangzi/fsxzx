@@ -1,0 +1,40 @@
+<!--list.wxml-->
+<view class="container">
+  <!--nav  bar-->
+  <view class="nav_bar">
+    <scroll-view class="nav_bar_scroll" scroll-x="true" style="width:{{navBarScrollWidth}}px">
+      <block wx:for="{{types}}" wx:for-item="type" wx:key="type.id">
+        <block wx:if="{{type.is_show}}">
+          <view bindtap="changeType" class="{{type.value == currentType ? 'current' : ''}} scroll_item" data-value="{{type.value}}">{{type.title}}</view>
+        </block>
+      </block>
+    </scroll-view>
+    <view class="edit_nav_bar" bindtap="gotoTypeEdit">
+      <image class="edit_nav_bar_btn" src="/images/nav_bar_edit.png"></image>
+    </view>
+  </view>
+
+  <!--beauty list content-->
+  <scroll-view scroll-y="true" style="height:{{scrollHeight}}px;" scroll-top="75" class="content-scroll" bindscrolltolower="loadMore" bindscrolltoupper="refresh">
+    <view class="content">
+
+      <block wx:for="{{contentList}}" wx:key="item.id">
+        <view class="beauty_item" style="width:{{beautyItemWidth}}px"
+        data-id="{{item.id}}" data-imgsrc="{{item.img}}" data-title="{{item.title}}" bindtap="gotoAlbum">
+          <image src="{{item.img}}" mode="aspectFit"></image>
+          <text>{{item.title}}</text>
+        </view>
+      </block>
+
+    </view>
+  </scroll-view>
+  <view wx:if="{{hasLoad}}">
+    <view wx:if="{{hasMore}}" style="display: flex;flex-direction: row;align-items: center;align-self: center;justify-content: center;">
+      <icon type="waiting" size="25" />
+      <text>玩命的加载中...</text>
+    </view>
+    <view wx:else>
+      <text>没有更多内容了</text>
+    </view>
+  </view>
+</view>

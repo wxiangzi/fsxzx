@@ -1,0 +1,39 @@
+.container{
+    height: 100%;
+    width: 100%;
+    padding: 20rpx 0;
+}
+.tips {
+  box-sizing: border-box;
+  background-color: #e6e6e6;
+  line-height: 80rpx;
+  font-size: 30rpx;
+  padding: 0 20rpx;
+  width: 750rpx;
+}
+
+.type-content {
+  padding: 25rpx 25rpx;
+  display: flex;
+  flex-flow: row wrap;
+}
+
+.type-item {
+  width: auto;
+  text-align: center;
+  font-size: 30rpx;
+  line-height: 60rpx;
+  margin: 20rpx 10rpx;
+  height: 60rpx;
+  padding: 0 20rpx;
+}
+
+.type-item-show {
+  background-color: #be304d;
+  color: #fff;
+}
+
+.type-item-hide {
+  background-color: #e6e6e6;
+  color: #c4c4c4;
+}
